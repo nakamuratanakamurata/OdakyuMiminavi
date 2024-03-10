@@ -133,6 +133,7 @@ const VoiceCourse: React.FC<{ isHeadToOdawara: 0 | 1 | 2 }> = ({ isHeadToOdawara
   }, [previousStation, isHeadToOdawara]);
 
   const playVoice = (volume: string, shopId?: number) => {
+    console.log(volume, shopId);
     console.log('playVoice function called');
     const baseURL = 'https://ebcnutyfbxzbndfdaoqd.supabase.co/storage/v1/object/public/Miminavi_Voice/';
     let audioUrl = `${baseURL}${volume}/${volume}.mp3`;
