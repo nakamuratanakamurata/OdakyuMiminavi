@@ -46,8 +46,8 @@ function App() {
       </div>
       <div className="button-container">
         <button disabled>カフェモード</button>
-        <button disabled>いい景色コース</button>
-        <button disabled>歴史コース</button>
+        <button onClick={() => handleVoiceClick(0)}>新宿行きVoiceコース</button>
+        <button onClick={() => handleVoiceClick(2)}>小田原行きVoiceコース</button>
         <button onClick={handleVoiceClick}>Voiceコース</button>
       </div>
       {showVoiceCourse && <VoiceCourse />}
