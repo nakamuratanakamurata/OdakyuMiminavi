@@ -54,6 +54,7 @@ const VoiceCourse: React.FC = () => {
   useEffect(() => {
     console.log('useEffect triggered');
     const timer = setInterval(() => {
+      setIsHeadToOdawara(0);
       if (position?.latitude && position?.longitude) {
         const station = stations.find(
           (s) =>
