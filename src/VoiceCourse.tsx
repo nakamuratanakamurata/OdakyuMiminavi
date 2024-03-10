@@ -78,7 +78,7 @@ const VoiceCourse: React.FC = () => {
           }
         }
 
-        if (initLat && initLng && isHeadToOdawara === 1) {
+        if (initLat && initLng && isHeadToOdawara === 2) {
           if (position.latitude - initLat < -0.003 && position.longitude - initLng < -0.003) {
             console.log('Direction changed to Odawara');
             setIsHeadToOdawara(2);
