@@ -38,7 +38,7 @@ type Spotlist = {
   sub_img: string[];
 };
 
-const VoiceCourse: React.FC<{ isHeadToOdawara: 0 | 1 | 2 }> = ({ isHeadToOdawara: initialDirection }) => {
+/*const VoiceCourse: React.FC<{ isHeadToOdawara: 0 | 1 | 2 }> = ({ isHeadToOdawara: initialDirection }) => {
   const [isHeadToOdawara, setIsHeadToOdawara] = useState<0 | 1 | 2>(initialDirection);
   const [isGameStarted, setIsGameStarted] = useState(false);
   const [initLat, setInitLat] = useState<number | null>(null);
@@ -93,6 +93,8 @@ const VoiceCourse: React.FC<{ isHeadToOdawara: 0 | 1 | 2 }> = ({ isHeadToOdawara
 
     return () => clearInterval(timer);
   }, [position, isGameStarted, initLat, initLng, isHeadToOdawara, playGameStart]);
+
+  */
 
   useEffect(() => {
     console.log('useEffect triggered for previousStation and isHeadToOdawara');
