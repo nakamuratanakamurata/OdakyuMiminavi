@@ -199,13 +199,7 @@ const VoiceCourse: React.FC<{ isHeadToOdawara: 0 | 1 | 2 }> = ({ isHeadToOdawara
         <div>
           <h1>{currentSpot.title}</h1>
           {currentSpot.main_img && currentSpot.main_img.url && (
-            <img
-              src={`${stations.find((s) => s.Voice_vol_ID === String(currentSpot.vol))?.Voice_url}${
-                currentSpot.main_img.url
-              }`}
-              alt={currentSpot.title}
-              style={{ width: '50%', height: 'auto' }}
-            />
+          
           )}
           <div>
             {currentSpot.description.access && <p>アクセス: {currentSpot.description.access}</p>}
