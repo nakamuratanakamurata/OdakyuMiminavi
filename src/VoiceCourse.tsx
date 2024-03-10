@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import useSound from 'use-sound';
 import { useGNSS } from './useGNSS';
-import stations from './json/Station.json';
-import spotlist from './json/spotlist.json';
+import stations from './Station.json';
+import spotlist from './spotlist.json';
 
 type Station = {
   id: string;
@@ -52,6 +52,7 @@ const VoiceCourse: React.FC = () => {
   const position = useGNSS();
 
   useEffect(() => {
+    console.log('useEffect triggered');
     const timer = setInterval(() => {
       if (position?.latitude && position?.longitude) {
         const station = stations.find(
@@ -61,6 +62,7 @@ const VoiceCourse: React.FC = () => {
         );
 
         if (station && !isGameStarted) {
+          console.log('Game started');
           playGameStart();
           setIsGameStarted(true);
           setInitLat(position.latitude);
@@ -68,17 +70,21 @@ const VoiceCourse: React.FC = () => {
           setPreviousStation(station as Station);
 
           if (station.id === '1') {
+            console.log('Heading to Shinjuku');
             setIsHeadToOdawara(0);
           } else if (station.id === '47') {
+            console.log('Heading to Odawara');
             setIsHeadToOdawara(2);
           }
         }
 
         if (initLat && initLng && isHeadToOdawara === 1) {
           if (position.latitude - initLat < -0.003 && position.longitude - initLng < -0.003) {
+            console.log('Direction changed to Odawara');
             setIsHeadToOdawara(2);
             playMiminavi(2, previousStation);
           } else if (position.latitude - initLat > 0.003 && position.longitude - initLng > 0.003) {
+            console.log('Direction changed to Shinjuku');
             setIsHeadToOdawara(0);
             playMiminavi(0, previousStation);
           }
@@ -90,12 +96,14 @@ const VoiceCourse: React.FC = () => {
   }, [position, isGameStarted, initLat, initLng, isHeadToOdawara, playGameStart, previousStation]);
 
   const playMiminavi = (direction: 0 | 2, prevStation: Station | null) => {
+    console.log('playMiminavi function called');
     if (!prevStation) return;
 
     const nextStationId = direction === 0 ? String(Number(prevStation.id) - 1) : String(Number(prevStation.id) + 1);
     const nextStation = stations.find((s) => s.id === nextStationId);
 
     if (nextStation) {
+      console.log('Next station:', nextStation.name);
       setNextStation(nextStation as Station);
 
       const shopList = spotlist.filter((spot) => spot.vol === Number(nextStation.Voice_vol_ID));
@@ -110,6 +118,7 @@ const VoiceCourse: React.FC = () => {
         fetch(url)
           .then((response) => {
             if (response.ok) {
+              console.log(`File exists: ${nextStation.Voice_vol_ID}_${i}.mp3`);
               fileExistShopID.push(i);
             }
           })
@@ -123,6 +132,7 @@ const VoiceCourse: React.FC = () => {
   };
 
   const playVoice = (volume: string, shopId?: number) => {
+    console.log('playVoice function called');
     const baseURL = 'https://ebcnutyfbxzbndfdaoqd.supabase.co/storage/v1/object/public/Miminavi_Voice/';
     let audioUrl = `${baseURL}${volume}/${volume}.mp3`;
 
@@ -130,12 +140,14 @@ const VoiceCourse: React.FC = () => {
       audioUrl = `${baseURL}${volume}/${volume}_${shopId}.mp3`;
       const spot = shopList.find((s) => s.id === shopId);
       setCurrentSpot(spot || null);
+      console.log('Current spot:', spot?.title);
     } else {
       setCurrentSpot(null);
     }
 
     const [playAudio, { stop: _stop }] = useSound(audioUrl, {
       onend: () => {
+        console.log('Audio ended');
         setTimeout(() => {
           setCurrentSpot(null);
           if (fileExistShopID.length > 0) {
@@ -150,6 +162,7 @@ const VoiceCourse: React.FC = () => {
                 Math.abs(nextStation.coordinates[1] - position.latitude) >= 0.003 &&
                 Math.abs(nextStation.coordinates[0] - position.longitude) >= 0.003
               ) {
+                console.log('Playing voice for next spot');
                 playVoice(nextStation.Voice_vol_ID, selectedShopId);
               }
             }, 5000);
@@ -158,18 +171,27 @@ const VoiceCourse: React.FC = () => {
       },
     });
 
+    console.log('Playing audio:', audioUrl);
     playAudio();
   };
 
   useEffect(() => {
+    console.log('useEffect triggered for nextStation');
     if (nextStation) {
+      console.log('Playing voice for next station');
       playVoice(nextStation.Voice_vol_ID);
     }
   }, [nextStation]);
 
   return (
     <div>
-      {/* ... */}
+      <h2>Debug Information:</h2>
+      <p>Is game started: {isGameStarted.toString()}</p>
+      <p>Is heading to Odawara: {isHeadToOdawara.toString()}</p>
+      <p>Previous station: {previousStation?.name}</p>
+      <p>Next station: {nextStation?.name}</p>
+      <p>Current spot: {currentSpot?.title}</p>
+      <h2>Spot Information:</h2>
       {currentSpot && (
         <div>
           <h1>{currentSpot.title}</h1>
@@ -212,8 +234,6 @@ const VoiceCourse: React.FC = () => {
 };
 
 export default VoiceCourse;
-
-
 /*
 import { useState, useEffect } from 'react';
 import useSound from 'use-sound';
