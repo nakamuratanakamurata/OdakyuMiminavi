@@ -179,6 +179,7 @@ const VoiceCourse: React.FC<{ isHeadToOdawara: 0 | 1 | 2 }> = ({ isHeadToOdawara
     console.log('useEffect triggered for nextStation');
     if (nextStation) {
       console.log('Playing voice for next station');
+      console.log(nextStation)
       playVoice(nextStation.Voice_vol_ID);
     }
   }, [nextStation]);
