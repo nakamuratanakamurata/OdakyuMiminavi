@@ -112,7 +112,7 @@ const VoiceCourse: React.FC<{ isHeadToOdawara: 0 | 1 | 2 }> = ({ isHeadToOdawara
         const baseURL = 'https://ebcnutyfbxzbndfdaoqd.supabase.co/storage/v1/object/public/Miminavi_Voice/';
         const fileExistShopID: number[] = [];
 
-        for (let i = 1; i <= 9; i++) {
+        for (let i = 1; i <= 5; i++) {
           const url = `${baseURL}${nextStation.Voice_vol_ID}/${nextStation.Voice_vol_ID}_${i}.mp3`;
           fetch(url)
             .then((response) => {
