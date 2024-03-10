@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import useSound from 'use-sound';
 import { useGNSS } from './useGNSS';
-import stations from './Station.json';
-import spotlist from './spotlist.json';
+import stations from './json/Station.json';
+import spotlist from './json/spotlist.json';
 
 type Station = {
   id: string;
