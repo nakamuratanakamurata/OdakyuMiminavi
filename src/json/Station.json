@@ -1,0 +1,542 @@
+[
+  {
+    "id": "1",
+    "name": "新宿",
+    "coordinates": [
+      139.6995653,
+      35.6906132
+    ],
+    "Is Onvoice": "0",
+    "Voice_vol_ID": "",
+    "Voice_url": ""
+  },
+  {
+    "id": "2",
+    "name": "南新宿",
+    "coordinates": [
+      139.698871,
+      35.6836942
+    ],
+    "Is Onvoice": "1",
+    "Voice_vol_ID": "8",
+    "Voice_url": "https://www.odakyu-voice.jp/town/2019_11_townfile/"
+  },
+  {
+    "id": "3",
+    "name": "参宮橋",
+    "coordinates": [
+      139.6936705,
+      35.6787444
+    ],
+    "Is Onvoice": "1",
+    "Voice_vol_ID": "15",
+    "Voice_url": "https://www.odakyu-voice.jp/town/2020_09_townfile/"
+  },
+  {
+    "id": "4",
+    "name": "代々木八幡",
+    "coordinates": [
+      139.6888398,
+      35.6696211
+    ],
+    "Is Onvoice": "1",
+    "Voice_vol_ID": "2",
+    "Voice_url": "https://www.odakyu-voice.jp/town/2019_05_townfile/"
+  },
+  {
+    "id": "5",
+    "name": "代々木上原",
+    "coordinates": [
+      139.6796982,
+      35.6691191
+    ],
+    "Is Onvoice": "1",
+    "Voice_vol_ID": "31",
+    "Voice_url": "https://www.odakyu-voice.jp/town/2022_01_townfile/"
+  },
+  {
+    "id": "6",
+    "name": "東北沢",
+    "coordinates": [
+      139.6724458,
+      35.66517
+    ],
+    "Is Onvoice": "1",
+    "Voice_vol_ID": "22",
+    "Voice_url": "https://www.odakyu-voice.jp/town/2021_04_townfile/"
+  },
+  {
+    "id": "7",
+    "name": "下北沢",
+    "coordinates": [
+      139.6668421,
+      35.6611176
+    ],
+    "Is Onvoice": "1",
+    "Voice_vol_ID": "39",
+    "Voice_url": "https://www.odakyu-voice.jp/town/2022_09_townfile/"
+  },
+  {
+    "id": "8",
+    "name": "世田谷代田",
+    "coordinates": [
+      139.661541,
+      35.6582731
+    ],
+    "Is Onvoice": "1",
+    "Voice_vol_ID": "51",
+    "Voice_url": "https://www.odakyu-voice.jp/town/2023_09_townfile/"
+  },
+  {
+    "id": "9",
+    "name": "梅ヶ丘",
+    "coordinates": [
+      139.6541526,
+      35.6561279
+    ],
+    "Is Onvoice": "1",
+    "Voice_vol_ID": "34",
+    "Voice_url": "https://www.odakyu-voice.jp/town/2022_04_townfile/"
+  },
+  {
+    "id": "10",
+    "name": "豪徳寺",
+    "coordinates": [
+      139.6468687,
+      35.6534875
+    ],
+    "Is Onvoice": "1",
+    "Voice_vol_ID": "16",
+    "Voice_url": "https://www.odakyu-voice.jp/town/2020_10_townfile/"
+  },
+  {
+    "id": "11",
+    "name": "経堂",
+    "coordinates": [
+      139.6366668,
+      35.6513052
+    ],
+    "Is Onvoice": "1",
+    "Voice_vol_ID": "3",
+    "Voice_url": "https://www.odakyu-voice.jp/town/2019_06_townfile/"
+  },
+  {
+    "id": "12",
+    "name": "千歳船橋",
+    "coordinates": [
+      139.6238299,
+      35.6473772
+    ],
+    "Is Onvoice": "1",
+    "Voice_vol_ID": "9",
+    "Voice_url": "https://www.odakyu-voice.jp/town/2019_12_townfile/"
+  },
+  {
+    "id": "13",
+    "name": "祖師ヶ谷大蔵",
+    "coordinates": [
+      139.6097212,
+      35.6433359
+    ],
+    "Is Onvoice": "1",
+    "Voice_vol_ID": "44",
+    "Voice_url": "https://www.odakyu-voice.jp/town/2023_02_townfile/"
+  },
+  {
+    "id": "14",
+    "name": "成城学園前",
+    "coordinates": [
+      139.5984488,
+      35.6399606
+    ],
+    "Is Onvoice": "1",
+    "Voice_vol_ID": "24",
+    "Voice_url": "https://www.odakyu-voice.jp/town/2021_06_townfile/"
+  },
+  {
+    "id": "15",
+    "name": "喜多見",
+    "coordinates": [
+      139.5868466,
+      35.6365781
+    ],
+    "Is Onvoice": "0",
+    "Voice_vol_ID": "",
+    "Voice_url": ""
+  },
+  {
+    "id": "16",
+    "name": "狛江",
+    "coordinates": [
+      139.5774015,
+      35.6323329
+    ],
+    "Is Onvoice": "1",
+    "Voice_vol_ID": "28",
+    "Voice_url": "https://www.odakyu-voice.jp/town/2021_10_townfile/"
+  },
+  {
+    "id": "17",
+    "name": "和泉多摩川",
+    "coordinates": [
+      139.5737804,
+      35.6274845
+    ],
+    "Is Onvoice": "0",
+    "Voice_vol_ID": "",
+    "Voice_url": ""
+  },
+  {
+    "id": "18",
+    "name": "登戸",
+    "coordinates": [
+      139.569561,
+      35.6208368
+    ],
+    "Is Onvoice": "1",
+    "Voice_vol_ID": "55",
+    "Voice_url": "https://www.odakyu-voice.jp/town/2024_01_townfile/"
+  },
+  {
+    "id": "19",
+    "name": "向ヶ丘遊園",
+    "coordinates": [
+      139.5646155,
+      35.6170825
+    ],
+    "Is Onvoice": "1",
+    "Voice_vol_ID": "35",
+    "Voice_url": "https://www.odakyu-voice.jp/town/2022_05_townfile/"
+  },
+  {
+    "id": "20",
+    "name": "生田",
+    "coordinates": [
+      139.5419351,
+      35.6149679
+    ],
+    "Is Onvoice": "1",
+    "Voice_vol_ID": "57",
+    "Voice_url": "https://www.odakyu-voice.jp/town/2024_03_townfile/"
+  },
+  {
+    "id": "21",
+    "name": "読売ランド前",
+    "coordinates": [
+      139.5278851,
+      35.6147588
+    ],
+    "Is Onvoice": "0",
+    "Voice_vol_ID": "",
+    "Voice_url": ""
+  },
+  {
+    "id": "22",
+    "name": "百合ヶ丘",
+    "coordinates": [
+      139.5160808,
+      35.6090125
+    ],
+    "Is Onvoice": "1",
+    "Voice_vol_ID": "52",
+    "Voice_url": "https://www.odakyu-voice.jp/town/2023_10_townfile/"
+  },
+  {
+    "id": "23",
+    "name": "新百合ヶ丘",
+    "coordinates": [
+      139.5077183,
+      35.6038305
+    ],
+    "Is Onvoice": "1",
+    "Voice_vol_ID": "45",
+    "Voice_url": "https://www.odakyu-voice.jp/town/2023_03_townfile/"
+  },
+  {
+    "id": "24",
+    "name": "柿生",
+    "coordinates": [
+      139.4975991,
+      35.5896069
+    ],
+    "Is Onvoice": "1",
+    "Voice_vol_ID": "10",
+    "Voice_url": "https://www.odakyu-voice.jp/town/2020_01_townfile/"
+  },
+  {
+    "id": "25",
+    "name": "鶴川",
+    "coordinates": [
+      139.4815965,
+      35.5831224
+    ],
+    "Is Onvoice": "0",
+    "Voice_vol_ID": "",
+    "Voice_url": ""
+  },
+  {
+    "id": "26",
+    "name": "玉川学園前",
+    "coordinates": [
+      139.4635446,
+      35.5636418
+    ],
+    "Is Onvoice": "1",
+    "Voice_vol_ID": "23",
+    "Voice_url": "https://www.odakyu-voice.jp/town/2021_05_townfile/"
+  },
+  {
+    "id": "27",
+    "name": "町田",
+    "coordinates": [
+      139.4451073,
+      35.5440552
+    ],
+    "Is Onvoice": "1",
+    "Voice_vol_ID": "19",
+    "Voice_url": "https://www.odakyu-voice.jp/town/2021_01_townfile/"
+  },
+  {
+    "id": "28",
+    "name": "相模大野",
+    "coordinates": [
+      139.4378294,
+      35.5321099
+    ],
+    "Is Onvoice": "1",
+    "Voice_vol_ID": "5",
+    "Voice_url": "https://www.odakyu-voice.jp/town/2019_08_townfile/"
+  },
+  {
+    "id": "29",
+    "name": "小田急相模原",
+    "coordinates": [
+      139.4229589,
+      35.5155168
+    ],
+    "Is Onvoice": "0",
+    "Voice_vol_ID": "",
+    "Voice_url": ""
+  },
+  {
+    "id": "30",
+    "name": "相武台前",
+    "coordinates": [
+      139.4085411,
+      35.4993145
+    ],
+    "Is Onvoice": "1",
+    "Voice_vol_ID": "30",
+    "Voice_url": "https://www.odakyu-voice.jp/town/2021_12_townfile/"
+  },
+  {
+    "id": "31",
+    "name": "座間",
+    "coordinates": [
+      139.3999416,
+      35.4807787
+    ],
+    "Is Onvoice": "1",
+    "Voice_vol_ID": "41",
+    "Voice_url": "https://www.odakyu-voice.jp/town/2022_11_townfile/"
+  },
+  {
+    "id": "32",
+    "name": "海老名",
+    "coordinates": [
+      139.3909619,
+      35.4527501
+    ],
+    "Is Onvoice": "1",
+    "Voice_vol_ID": "18",
+    "Voice_url": "https://www.odakyu-voice.jp/town/2020_12_townfile/"
+  },
+  {
+    "id": "33",
+    "name": "厚木",
+    "coordinates": [
+      139.3777178,
+      35.4430401
+    ],
+    "Is Onvoice": "1",
+    "Voice_vol_ID": "47",
+    "Voice_url": "https://www.odakyu-voice.jp/town/2023_05_townfile/"
+  },
+  {
+    "id": "34",
+    "name": "本厚木",
+    "coordinates": [
+      139.3642806,
+      35.4393177
+    ],
+    "Is Onvoice": "1",
+    "Voice_vol_ID": "11",
+    "Voice_url": "https://www.odakyu-voice.jp/town/2020_02_townfile/"
+  },
+  {
+    "id": "35",
+    "name": "愛甲石田",
+    "coordinates": [
+      139.343943,
+      35.4176073
+    ],
+    "Is Onvoice": "1",
+    "Voice_vol_ID": "25",
+    "Voice_url": "https://www.odakyu-voice.jp/town/2021_07_townfile/"
+  },
+  {
+    "id": "36",
+    "name": "伊勢原",
+    "coordinates": [
+      139.3134259,
+      35.3960934
+    ],
+    "Is Onvoice": "1",
+    "Voice_vol_ID": "12",
+    "Voice_url": "https://www.odakyu-voice.jp/town/2020_03_townfile/"
+  },
+  {
+    "id": "37",
+    "name": "鶴巻温泉",
+    "coordinates": [
+      139.2776124,
+      35.3808666
+    ],
+    "Is Onvoice": "1",
+    "Voice_vol_ID": "54",
+    "Voice_url": "https://www.odakyu-voice.jp/town/2023_12_townfile/"
+  },
+  {
+    "id": "38",
+    "name": "東海大学前",
+    "coordinates": [
+      139.271254,
+      35.373169
+    ],
+    "Is Onvoice": "1",
+    "Voice_vol_ID": "37",
+    "Voice_url": "https://www.odakyu-voice.jp/town/2022_07_townfile/"
+  },
+  {
+    "id": "39",
+    "name": "秦野",
+    "coordinates": [
+      139.2257117,
+      35.3702837
+    ],
+    "Is Onvoice": "1",
+    "Voice_vol_ID": "6",
+    "Voice_url": "https://www.odakyu-voice.jp/town/2019_09_townfile/"
+  },
+  {
+    "id": "40",
+    "name": "渋沢",
+    "coordinates": [
+      139.1847235,
+      35.3741461
+    ],
+    "Is Onvoice": "1",
+    "Voice_vol_ID": "32",
+    "Voice_url": "https://www.odakyu-voice.jp/town/2022_02_townfile/"
+  },
+  {
+    "id": "41",
+    "name": "新松田",
+    "coordinates": [
+      139.1395236,
+      35.3448338
+    ],
+    "Is Onvoice": "0",
+    "Voice_vol_ID": "",
+    "Voice_url": ""
+  },
+  {
+    "id": "42",
+    "name": "開成",
+    "coordinates": [
+      139.1359251,
+      35.3262907
+    ],
+    "Is Onvoice": "1",
+    "Voice_vol_ID": "26",
+    "Voice_url": "https://www.odakyu-voice.jp/town/2021_08_townfile/"
+  },
+  {
+    "id": "43",
+    "name": "栢山",
+    "coordinates": [
+      139.1425149,
+      35.3109356
+    ],
+    "Is Onvoice": "1",
+    "Voice_vol_ID": "42",
+    "Voice_url": "https://www.odakyu-voice.jp/town/2022_12_townfile/"
+  },
+  {
+    "id": "44",
+    "name": "富水",
+    "coordinates": [
+      139.1453206,
+      35.2963073
+    ],
+    "Is Onvoice": "1",
+    "Voice_vol_ID": "20",
+    "Voice_url": "https://www.odakyu-voice.jp/town/2021_02_townfile/"
+  },
+  {
+    "id": "45",
+    "name": "螢田",
+    "coordinates": [
+      139.1520782,
+      35.285015
+    ],
+    "Is Onvoice": "0",
+    "Voice_vol_ID": "",
+    "Voice_url": ""
+  },
+  {
+    "id": "46",
+    "name": "足柄",
+    "coordinates": [
+      139.1544319,
+      35.2719379
+    ],
+    "Is Onvoice": "1",
+    "Voice_vol_ID": "56",
+    "Voice_url": "https://www.odakyu-voice.jp/town/2024_02_townfile/"
+  },
+  {
+    "id": "47",
+    "name": "小田原",
+    "coordinates": [
+      139.1552965,
+      35.2565082
+    ],
+    "Is Onvoice": "1",
+    "Voice_vol_ID": "13",
+    "Voice_url": "https://www.odakyu-voice.jp/town/2020_07_townfile/"
+  },
+  {
+    "id": "48",
+    "name": "南馬込",
+    "coordinates": [
+      139.71506207832778,
+      35.58959495042074
+    ],
+    "Is Onvoice": "1",
+    "Voice_vol_ID": "13",
+    "Voice_url": "https://www.odakyu-voice.jp/town/2020_07_townfile/"
+  },
+  {
+    "id": "57",
+    "name": "PCデバッグ",
+    "coordinates": [
+      139.7075,
+      35.5993
+    ],
+    "Is Onvoice": "1",
+    "Voice_vol_ID": "56",
+    "Voice_url": "https://www.odakyu-voice.jp/town/2024_02_townfile/"
+  }
+
+]
