@@ -38,7 +38,7 @@ type Spotlist = {
   sub_img: string[];
 };
 
-/*const VoiceCourse: React.FC<{ isHeadToOdawara: 0 | 1 | 2 }> = ({ isHeadToOdawara: initialDirection }) => {
+const VoiceCourse: React.FC<{ isHeadToOdawara: 0 | 1 | 2 }> = ({ isHeadToOdawara: initialDirection }) => {
   const [isHeadToOdawara, setIsHeadToOdawara] = useState<0 | 1 | 2>(initialDirection);
   const [isGameStarted, setIsGameStarted] = useState(false);
   const [initLat, setInitLat] = useState<number | null>(null);
@@ -94,7 +94,6 @@ type Spotlist = {
     return () => clearInterval(timer);
   }, [position, isGameStarted, initLat, initLng, isHeadToOdawara, playGameStart]);
 
-  */
 
   useEffect(() => {
     console.log('useEffect triggered for previousStation and isHeadToOdawara');
@@ -165,7 +164,7 @@ type Spotlist = {
                 Math.abs(nextStation.coordinates[0] - position.longitude) >= 0.003
               ) {
                 console.log('Playing voice for next spot');
-                //playVoice(nextStation.Voice_vol_ID, selectedShopId);
+                playVoice(nextStation.Voice_vol_ID, selectedShopId);
               }
             }, 5000);
           }
@@ -182,7 +181,7 @@ type Spotlist = {
     if (nextStation) {
       console.log('Playing voice for next station');
       console.log(nextStation)
-      //playVoice(nextStation.Voice_vol_ID);
+      playVoice(nextStation.Voice_vol_ID);
     }
   }, [nextStation]);
 
