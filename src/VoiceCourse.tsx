@@ -163,7 +163,7 @@ const VoiceCourse: React.FC<{ isHeadToOdawara: 0 | 1 | 2 }> = ({ isHeadToOdawara
                 Math.abs(nextStation.coordinates[0] - position.longitude) >= 0.003
               ) {
                 console.log('Playing voice for next spot');
-                playVoice(nextStation.Voice_vol_ID, selectedShopId);
+                //playVoice(nextStation.Voice_vol_ID, selectedShopId);
               }
             }, 5000);
           }
@@ -180,7 +180,7 @@ const VoiceCourse: React.FC<{ isHeadToOdawara: 0 | 1 | 2 }> = ({ isHeadToOdawara
     if (nextStation) {
       console.log('Playing voice for next station');
       console.log(nextStation)
-      playVoice(nextStation.Voice_vol_ID);
+      //playVoice(nextStation.Voice_vol_ID);
     }
   }, [nextStation]);
 
